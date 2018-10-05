@@ -26,7 +26,7 @@ food.show();
 food.bacteria();
 }
 for(bacteria bob : colony){
-//((bacteria)bob).walk();
+((bacteria)bob).walk();
 ((bacteria)bob).show();
 for(food food2 : fooda){
 food2.eaten(((bacteria)bob));
@@ -49,7 +49,7 @@ for(bacteria bob : colony2){
   indexa++;
   }
   if(success == false){
-  colony.add(bob);
+  //colony.add(bob);
   }
 }
 for(predator predator : predatorb){
