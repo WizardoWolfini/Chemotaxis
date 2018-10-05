@@ -26,10 +26,10 @@ food.show();
 food.bacteria();
 }
 for(bacteria bob : colony){
-bob.walk();
-bob.show();
+((bacteria)bob).walk();
+((bacteria)bob).show();
 for(food food2 : fooda){
-food2.eaten(bob);
+food2.eaten(((bacteria)bob));
 }
 }
 for(predator predator : predatora){
@@ -38,7 +38,19 @@ predator.trackmove();
 predator.eat();
 }
 for(bacteria bob : colony2){
-  //colony.add(bob);
+  int indexa = 0;
+  boolean success = false;
+  for(bacteria bob2 : colony){
+  if(bob2.alive == false){
+  colony.set(indexa, bob);
+  success = true;
+  break;
+  }
+  indexa++;
+  }
+  if(success == false){
+  colony.add(bob);
+  }
 }
 for(predator predator : predatorb){
 predatora.add(predator);
@@ -174,7 +186,7 @@ class predator{
   }
   void show(){
     if(alive){
-  fill(timer+55,0,0);
+  fill(timer*2-145,0,0);
   stroke(0);
   ellipse(myX,myY,size,size);
   timer--;
