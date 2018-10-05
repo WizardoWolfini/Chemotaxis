@@ -130,7 +130,7 @@ class food{
   if(Math.random() < 0.00005){
     if(alive){
    alive = false;
-   //colony.add(new bacteria(myX,myY));
+   colony2.add(new bacteria(myX,myY));
     }
   }
   }
