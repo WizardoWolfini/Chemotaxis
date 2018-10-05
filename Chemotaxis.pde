@@ -190,7 +190,6 @@ class predator{
   stroke(0);
   ellipse(myX,myY,size,size);
   timer--;
-  println(timer);
   if(timer < 0){
   alive = false;
   }
