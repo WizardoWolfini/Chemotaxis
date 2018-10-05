@@ -38,19 +38,7 @@ predator.trackmove();
 predator.eat();
 }
 for(bacteria bob : colony2){
-  int indexa = 0;
-  boolean success = false;
-  for(bacteria bob2 : colony){
-  if(bob2.alive == false){
-  colony.set(indexa, bacteria bob);
-  success = true;
-  break;
-  }
-  indexa++;
-  }
-  if(success == false){
   colony.add(bob);
-  }
 }
 for(predator predator : predatorb){
 predatora.add(predator);
