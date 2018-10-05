@@ -42,7 +42,7 @@ for(bacteria bob : colony2){
   boolean success = false;
   for(bacteria bob2 : colony){
   if(bob2.alive == false){
-  colony.set(indexa, bob);
+  colony.set(indexa, bacteria bob);
   success = true;
   break;
   }
