@@ -38,7 +38,7 @@ predator.trackmove();
 predator.eat();
 }
 for(bacteria bob : colony2){
-  colony.add(bob);
+  //colony.add(bob);
 }
 for(predator predator : predatorb){
 predatora.add(predator);
