@@ -26,11 +26,12 @@ food.show();
 food.bacteria();
 }
 for(bacteria bob : colony){
-println(bob.myX);
+if(bob.X >= -100){
 ((bacteria)bob).walk();
 ((bacteria)bob).show();
 for(food food2 : fooda){
 food2.eaten(((bacteria)bob));
+}
 }
 }
 for(predator predator : predatora){
