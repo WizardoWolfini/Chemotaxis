@@ -186,7 +186,7 @@ class predator{
   }
   void show(){
     if(alive){
-  fill(timer*2-145,0,0);
+  fill(timer+55,0,0);
   stroke(0);
   ellipse(myX,myY,size,size);
   timer--;
