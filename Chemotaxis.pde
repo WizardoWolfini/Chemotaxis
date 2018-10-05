@@ -49,7 +49,7 @@ for(bacteria bob : colony2){
   indexa++;
   }
   if(success == false){
-  //colony.add(bob);
+  colony.add(bob);
   }
 }
 for(predator predator : predatorb){
@@ -130,7 +130,7 @@ class food{
   if(Math.random() < 0.00005){
     if(alive){
    alive = false;
-   colony.add(new bacteria(myX,myY));
+   //colony.add(new bacteria(myX,myY));
     }
   }
   }
