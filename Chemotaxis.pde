@@ -26,7 +26,7 @@ food.show();
 food.bacteria();
 }
 for(bacteria bob : colony){
-((bacteria)bob).walk();
+//((bacteria)bob).walk();
 ((bacteria)bob).show();
 for(food food2 : fooda){
 food2.eaten(((bacteria)bob));
