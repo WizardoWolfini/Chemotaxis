@@ -26,12 +26,10 @@ food.show();
 food.bacteria();
 }
 for(bacteria bob : colony){
-if(bob.X >= -100){
-((bacteria)bob).walk();
-((bacteria)bob).show();
+bob.walk();
+bob.show();
 for(food food2 : fooda){
-food2.eaten(((bacteria)bob));
-}
+food2.eaten(bob);
 }
 }
 for(predator predator : predatora){
@@ -132,7 +130,7 @@ class food{
   if(Math.random() < 0.00005){
     if(alive){
    alive = false;
-   colony2.add(new bacteria(myX,myY));
+   colony.add(new bacteria(myX,myY));
     }
   }
   }
