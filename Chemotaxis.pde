@@ -23,7 +23,7 @@ void draw(){
   background(127);
   for(food food : fooda){
 food.show();
-food.bacteria();
+food.bacteriacreate();
 }
 for(bacteria bob : colony){
 bob.walk();
@@ -126,7 +126,7 @@ class food{
       }
     }
   }
-  void bacteria(){
+  void bacteriacreate(){
   if(Math.random() < 0.00005){
     if(alive){
    alive = false;
